@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+/* padding */
+.MuiTableCell-root.MuiTableCell-body {
+  /* padding-top: 10px !important;
+  padding-bottom: 10px !important; */
+}
+
+/* border */
+.MuiTableCell-root.MuiTableCell-body,
+.MuiTableCell-root.MuiTableCell-head {
+  border: 0 !important;
+}
+tbody > tr.MuiTableRow-root {
+  /* background-color: transparent !important; */
+  /* height: 660px !important; */
+}
+
+/* head */
+.MuiTableCell-root.MuiTableCell-head {
+  background-color: transparent !important;
+  font-weight: bold;
+}
+
+/* shadow body */
+tbody > tr.MuiTableRow-root {
+  margin-top: 10px !important;
+  /* box-shadow: 0 3px 15px 0 #c2dbed63; */
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* table */
+.MuiTable-root {
+  border-collapse: separate !important;
+  border-spacing: 0 10px !important;
+  background-color: #f3fafd !important;
+}
+
+.MuiTableCell-root {
+  font-size: 12px !important;
+}
+
+.modal-header {
+  border: 0 !important;
+}
+
+.MuiMenuItem-root {
+  font-family: "lato" !important;
+  font-size: 12px !important;
+}
+
+.css-tlfecz-indicatorContainer,
+.css-1gtu0rj-indicatorContainer {
+  padding: 0 !important;
+}
+
+.css-1okebmr-indicatorSeparator {
+  display: none !important;
+}
+
+.css-rxwx27-control,
+.css-1pso0nj-control {
+  padding-bottom: 0 !important;
+}
+
+.css-g1d714-ValueContainer {
+  padding-left: 0 !important;
+}
+
+ 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

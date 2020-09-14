@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Modal from "react-bootstrap/Modal";
 import { Column, Row } from "simple-flexbox";
 import { StyleSheet, css } from "aphrodite";
@@ -37,7 +37,7 @@ let FinanceModalEdit = (props) => {
     options = dataAcount.data.map(({ id, name, type }) => ({
       label: name,
       value: id,
-      type
+      type,
     }));
   }
 
@@ -56,9 +56,9 @@ let FinanceModalEdit = (props) => {
       finance_account_id: value,
       finance_account_name: label,
       finance_account_type: type,
-      aaa :'asdfsdf'
+      aaa: "asdfsdf",
     };
-    console.log(param)
+    console.log(param);
 
     tryEditFinance(param);
   };

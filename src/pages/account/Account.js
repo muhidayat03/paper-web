@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row } from "simple-flexbox";
-import Tab from "../../components/tab/Tab";
-import TabItem from "../../components/tab/TabItem";
+import { Row } from "simple-flexbox"; 
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import MaterialTable from "material-table";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -18,8 +16,7 @@ import { useSelector, useDispatch } from "react-redux";
 import AccountModalAdd from "./AccountModalAdd";
 import AccountModalEdit from "./AccountModalEdit";
 import AccountModalDetail from "./AccountModalDetail";
-import AccountModalDelete from "./AccountModalDelete";
-import moment from "moment";
+import AccountModalDelete from "./AccountModalDelete"; 
 
 const Account = () => {
   const { data } = useSelector((state) => state.listAccount);
@@ -71,6 +68,10 @@ const Account = () => {
       <AccountModalEdit
         show={showModalEdit}
         onHide={() => setShowModalEdit(false)}
+      /> 
+      <AccountModalDelete
+        show={showModalDelete}
+        onHide={() => setShowModalDelete(false)}
       /> 
       <MaterialTable
         columns={[

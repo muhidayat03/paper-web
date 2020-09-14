@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Modal from "react-bootstrap/Modal";
 import { Column, Row } from "simple-flexbox";
 import { StyleSheet, css } from "aphrodite";
@@ -8,7 +8,7 @@ import { renderInputWithLabel } from "../../components/form/FormComponent";
 import { connect } from "react-redux";
 
 let AccountModalDetail = (props) => {
-  const { show, onHide, reset } = props;
+  const { show, onHide } = props;
 
   return (
     <Modal
@@ -95,17 +95,18 @@ AccountModalDetail = reduxForm({
 
 AccountModalDetail = connect(({ detailAccount }) => {
   let initialValues = {};
+
   if (detailAccount.data) {
     const {
-      data: { title, debit_amount, credit_amount, description },
+      data: { name, type, Description },
     } = detailAccount;
     initialValues = {
-      title,
-      debit_amount,
-      credit_amount,
-      description,
+      name,
+      type,
+      Description,
     };
   }
+
   return { initialValues: initialValues };
 })(AccountModalDetail);
 

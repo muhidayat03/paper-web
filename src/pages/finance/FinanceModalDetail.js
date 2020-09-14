@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Modal from "react-bootstrap/Modal";
 import { Column, Row } from "simple-flexbox";
 import { StyleSheet, css } from "aphrodite";
@@ -12,7 +12,7 @@ import { connect } from "react-redux";
 import { useSelector } from "react-redux";
 
 let FinanceModalDetail = (props) => {
-  const { show, onHide, reset } = props;
+  const { show, onHide } = props;
   let options = [];
   const { data: dataAcount } = useSelector((state) => state.listAccount);
 

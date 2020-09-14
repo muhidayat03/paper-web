@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Modal from "react-bootstrap/Modal";
 import { Column, Row } from "simple-flexbox";
 import { StyleSheet, css } from "aphrodite";

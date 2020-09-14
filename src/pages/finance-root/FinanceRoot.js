@@ -21,7 +21,7 @@ const FinanceRoot = () => {
           active={selectedItem === "Finance"}
         />
       </Tab>
-      {selectedItem == "Finance" ? <Finance /> : <Account />}
+      {selectedItem === "Finance" ? <Finance /> : <Account />}
     </>
   );
 };

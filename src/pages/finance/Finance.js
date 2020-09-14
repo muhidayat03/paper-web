@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row } from "simple-flexbox";
-import Tab from "../../components/tab/Tab";
-import TabItem from "../../components/tab/TabItem";
+import { Row } from "simple-flexbox"; 
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import MaterialTable from "material-table";
 import MenuItem from "@material-ui/core/MenuItem";

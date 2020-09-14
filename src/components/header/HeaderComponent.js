@@ -1,5 +1,4 @@
 import React from "react";
-import { string } from "prop-types";
 import { Row, Column } from "simple-flexbox";
 import { StyleSheet, css } from "aphrodite";
 import { useHistory } from "react-router-dom";
@@ -12,7 +11,7 @@ import { getUser } from "../../helpers/user";
 import UserIcon from "../../assets/users.svg";
 
 const ProfileDetail = (props) => (
-  <Column style={{marginBottom : 10}}>
+  <Column style={{ marginBottom: 10 }}>
     <Row
       style={{
         width: "100%",
